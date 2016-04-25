@@ -1,0 +1,7 @@
+before_install:
+- "sudo apt-get update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended hun"
+
+script:
+  - mkdir _build
+  - pdflatex -output-directory _build "Gautam Kumar Effective Continuous Integration in content_v1.tex"
+  - hunspell -w -l -t -p custom.dict  "Gautam Kumar Effective Continuous Integration in content_v1.tex"  | grep . && exit 1 || exit 0
