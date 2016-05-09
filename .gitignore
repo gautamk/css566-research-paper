@@ -157,3 +157,5 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+*.bib
+!css566_software_management.bib
