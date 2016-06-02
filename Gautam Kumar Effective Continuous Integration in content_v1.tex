@@ -75,6 +75,16 @@ Though continuous integration doesn't actually fix bugs, it offers a lot of bene
 
 The inherent complexity in software management is best described by the law of leaky abstractions \cite{spolsky_law_2002} which states that all non-trivial abstractions leak to some degree. 
 
+\subsection*{The Law of leaky abstractions}
+
+An abstraction in the context of computers and software refers to a mechanism that tries to hide the complexity of the underlying system while still offering a useful interface to interact effectively with the underlying system. Abstractions are meant to simplify the process of interacting with an inherently complex system by hiding away certain irrelevant details.
+
+Though abstractions vastly simplify interactions with a complex system, the abstractions are still limited by the capabilities of underlying system and  thus some serious failures always trickle up through abstractions and surprise the user in unexpected ways.
+
+A classic example of this would be Operating Systems. On the windows operating system any failure in the underlying hardware or its drivers can potentially lead to a BSOD (Blue screen of death) in which the computer displays a cryptic message on a blue screen and prompts the user for action. Though BSOD is a rare occurrence under normal operating conditions, its appearance often perplexes an average user who is unable to make a decision on the next course of action \cite{rosenberg_law_2007}. 
+
+\subsection*{CI in Software Management}
+
 Software management is in essence a process which tries to abstract away the chaos of managing an inherently complex task with the help of developers in an ever-evolving environment. So naturally Software Management tends to be a complex task which needs to be continually improved to adapt to changes in the environment such as new labour laws, new technologies, a new generation of customers and developers. 
 
 \section*{CI and an Evolving Environment}
