@@ -6,6 +6,7 @@
 \usepackage[usenames]{color}
 \usepackage{listings}
 \usepackage{wrapfig}
+\usepackage{dirtytalk}
 \usepackage[caption=false]{subfig}
 
 \newcommand{\citationneeded}{\textsuperscript{\textit{[CitationNeeded]}}}
@@ -34,7 +35,7 @@ gautamk@uw.edu, socha@uw.edu
 
 \section*{Abstract}
 Continuous Integration, A practice where developers integrate 
-frequently\cite{stahl_modeling_2014} is considered an integral part of Agile 
+frequently \cite{stahl_modeling_2014} is considered an integral part of Agile 
 development. CI is often thought to be a safety net that prevents developers from deploying broken code to production. 
 
 A similar process and ideology of continual improvement and integration can be applied to Software Management, The art and science of planning and leading software projects \cite{stellman_applied_2005}.
@@ -47,19 +48,32 @@ Software Management, Agile development, Continuous Integration
 
 \section*{Introduction}
 
-Martin Fowler in his seminal article\cite{fowler_continuous_2006} on Continuous Integration describes it as a practice where members of a team integrate their work frequently and each integration is verified by an automated build to detect problems quickly.
+Martin Fowler in his seminal article \cite{fowler_continuous_2006} on Continuous Integration describes it as a practice where members of a team integrate their work frequently and each integration is verified by an automated build to detect problems quickly.
 
-In the context described above integration is the process of combining the work of all the developers of a project into a cohesive software. On the other hand if considered generically, Integration can be thought of as a practice of combining the work of multiple people and verifying its correctness. Using a similar collective, Continuous integration could be the process if integrating the work of multiple people after specific events or set periods of time. 
+In the context described above integration is the process of combining the work of all the developers of a project into a cohesive software. On the other hand if considered generically, Integration can be thought of as a practice of combining the work of multiple people and verifying its correctness. Using a similar collective, Continuous integration could be the process of merging the work of multiple people after specific events or set periods of time.
 
-\section*{Continuous Improvement and Integration}
+\section*{Continuous Improvement}
 
-The practice of continuous improvement has evolved as a response to improvements in the way software is delivered and used by customers. With the introduction and popularisation of the internet in the early years of the 21st century many consumers and enterprises started using the internet and web technologies as more than just an information directory. Web sites evolved into web apps which lead to the rise of Web 2.0 \cite{oreilly_what_2007}. This evolution to Web 2.0 required innovations with web server technologies which also introduced significant complexity and risk to the stability of the software systems \cite{oreilly_what_2007}.
+The American Society of Quality define Continuous Improvement to be 
+\say{The ongoing improvement of products, services or processes through incremental and breakthrough improvements.} \cite{american_society_for_quality_continuous_????}
 
-Continuous Integration evolved in response to the increased risk to software stability and attempts to act as a safety net \cite{fowler_continuous_2006} to developers. Continuous Integration doesn't actually prevent or fix bugs, it merely makes discovering bugs easier and faster. 
+Continuous Improvement as a concept has existed for a long time. We can find mentions to continuous Improvement in texts dating back to the mid-19th century \cite{schroeder_americas_????}. 
+
+During the Industrial revolution of the mid-19th century workers were often trained not to think but rather just perform just their task. Thus the task of thinking was effectively cut off from the task of doing, which lead to the thinkers not understanding the practical restrictions of the real world and the increasing complexity of the systems \cite{schroeder_americas_????}. The same concept applies even today with software systems. In large organisations developers are often disenfranchised from the decision making process.
+
+This separation of thinkers from the practical implications of real world lead to the development of Continuous improvement which emphasizes a continuous stream incremental innovation \cite{bessant_rediscovering_1994}.
+
+\section*{Continuous Integration}
+
+Continuous improvement incentivizes a structure where hundreds of people are collectively working on the same basic problem set \cite{bessant_rediscovering_1994}. Continuous improvement brings along with it an explosion of ideas and as some of those ideas implemented a surge in the complexity of the system. Such a surge in complexity eventually leads to either the quality or velocity of development to decline \cite{zaytsev_increasing_2013} . 
+
+Continuous integration thus evolved as a mechanism to manage the risk associated with complex software systems \cite{zaytsev_increasing_2013} and  attempts to provide a safety net \cite{fowler_continuous_2006} to developers. 
+
+Though continuous integration doesn't actually fix bugs, it offers a lot of benefits which help in improving the overall quality of the project such as Improved communication, Project predictability and increased developer productivity \cite{sta_ahl_experienced_2013}.
 
 \section*{Software Management and Continuous Integration}
 
-The inherent complexity in software management is best described by the law of leaky abstractions\cite{spolsky_law_2002} which states that all non-trivial abstractions leak to some degree. 
+The inherent complexity in software management is best described by the law of leaky abstractions \cite{spolsky_law_2002} which states that all non-trivial abstractions leak to some degree. 
 
 Software management is in essence a process which tries to abstract away the chaos of managing an inherently complex task with the help of developers in an ever-evolving environment. So naturally Software Management tends to be a complex task which needs to be continually improved to adapt to changes in the environment such as new labour laws, new technologies, a new generation of customers and developers. 
 

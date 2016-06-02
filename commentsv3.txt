@@ -1,0 +1,21 @@
+liked:
+- The framing
+- Lots of good material. Now deepen the connection at every section: find more references, write more about causal factors and theoretical frameworks, etc.
+
+To improve:
+- Include a space before the left bracket of a citation, e.g., "article [3]"
+- You state "Continuous Integration doesn’t actually prevent or ﬁx bugs, it merely makes discovering bugs easier and faster." CI also may expose opportunities earlier, so in addition to addressing how CI helps reduce problems, you might want to address how CI helps increase value.
+- Push the concept of leaky abstractions further. Identify what the SM abstractions are, and how they are addressed by SM practices.
+- In addition to VR, what about AR and MR. What happens when developers start using VR/AR/MR to develop code? (EnvelopeVR and Magic Leap are planning to do this within the year.) How might that change SM?
+- What are the important dimensions along which you can conceptualize SM with respect to CI? How can you extrapolate trends?
+- What are the other implications and results of subscription models, open source, 
+- Connect CI to Lean? Cynefin? How people learn? Learning organizations?
+- Do you know software managers that you could interview to get their insights into how CI impacts or may impact their work?
+- Remove me from the list of authors (this is your paper)
+
+
+1. More connections
+2. more examples
+3. Assume the reader is from Bio field and explain
+4. Answer the why questions
+	- root cause analysis
