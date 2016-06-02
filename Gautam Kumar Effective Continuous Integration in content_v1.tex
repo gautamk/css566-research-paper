@@ -1,4 +1,4 @@
-\documentclass[10pt,conference]{IEEEtran}
+\documentclass[12pt,conference]{IEEEtran}
 %\documentclass[letterpaper,twocolumn,10pt]{article}
 
 \usepackage{graphicx}
@@ -8,6 +8,7 @@
 \usepackage{wrapfig}
 \usepackage{dirtytalk}
 \usepackage[caption=false]{subfig}
+\usepackage[export]{adjustbox}
 
 \newcommand{\citationneeded}{\textsuperscript{\textit{[CitationNeeded]}}}
 
@@ -69,7 +70,7 @@ Continuous improvement incentivizes a structure where hundreds of people are col
 
 Continuous integration thus evolved as a mechanism to manage the risk associated with complex software systems \cite{zaytsev_increasing_2013} and  attempts to provide a safety net \cite{fowler_continuous_2006} to developers. 
 
-Though continuous integration doesn't actually fix bugs, it offers a lot of benefits which help in improving the overall quality of the project such as Improved communication, Project predictability and increased developer productivity \cite{sta_ahl_experienced_2013}.
+Though continuous integration doesn't actually fix bugs, it offers a lot of benefits which help in improving the overall quality of the project such as Improved communication, Project predictability and increased developer productivity \cite{sta_ahl_experienced_2013}. So Continuous integration in many ways can be considered a modern method of complexity control \cite{beck_extreme_2000}.
 
 \section*{Software Management and Continuous Integration}
 
@@ -81,15 +82,30 @@ An abstraction in the context of computers and software refers to a mechanism th
 
 Though abstractions vastly simplify interactions with a complex system, the abstractions are still limited by the capabilities of underlying system and  thus some serious failures always trickle up through abstractions and surprise the user in unexpected ways.
 
-A classic example of this would be Operating Systems. On the windows operating system any failure in the underlying hardware or its drivers can potentially lead to a BSOD (Blue screen of death) in which the computer displays a cryptic message on a blue screen and prompts the user for action. Though BSOD is a rare occurrence under normal operating conditions, its appearance often perplexes an average user who is unable to make a decision on the next course of action \cite{rosenberg_law_2007}. 
+\begin{figure*}
+  \centering
+  \includegraphics[height=4in]{leakyabstraction}
+  \caption{The law of leaky abstraction: All non-trivial abstractions, to some degree, are leaky.}
+  \label{leakyabstraction}
+\end{figure*}
+
+A classic example of leaky abstractions would be Operating Systems. On the windows operating system any failure in the underlying hardware or its drivers can potentially lead to a BSOD (Blue screen of death) in which the computer displays a cryptic message on a blue screen and prompts the user for action. Though BSOD is a rare occurrence under normal operating conditions, its appearance often perplexes an average user who is unable to make a decision on the next course of action \cite{rosenberg_law_2007}. 
+
+\subsection*{Abstractions in Software Management}
+
+Software Management as a subset of Project management is primarily concerned with balancing the needs of stakeholders with the abilities of developers to deliver value.
+
+Software management practices abstract away the inner workings processes in the organisation. For example Agile methodologies such as Scrum and Kanban are an abstraction which uses best practices from Time management, Team communication, Performance management and Theory of constraints to derive value from developers collaborating within a team. 
+
+Another example of abstraction in Software management in teams would be embracing diversity which is an abstraction over Psychology and Economics to help teams take varied view points on any particular problem. 
 
 \subsection*{CI in Software Management}
 
-Software management is in essence a process which tries to abstract away the chaos of managing an inherently complex task with the help of developers in an ever-evolving environment. So naturally Software Management tends to be a complex task which needs to be continually improved to adapt to changes in the environment such as new labour laws, new technologies, a new generation of customers and developers. 
+Software management is in essence a process which tries to abstract away the chaos of managing an inherently complex task with the help of developers in an ever-evolving environment. As with any non trivial abstraction, Software Management is leaky and implementing Continuous integration into Software management practices could potentially offer benefits similar to software development.
 
 \section*{CI and an Evolving Environment}
 
-In today's fast changing tech landscape, traditional definitions of Continuous integration and improvement are being challenged to adapt quickly. In the following sections we discuss some potential factors which affect Continuous Integration deployments in an organisation.
+In today's fast changing technology landscape, traditional definitions of Continuous integration and improvement are being challenged to adapt quickly. In the following sections we discuss some potential factors which affect Continuous Integration deployments in an organisation.
 
 \subsection*{Evolving Customer}
 The previous generation of customers were primarily using a desktop computer with a reliable internet connection and a large display. This customer base is quickly moving towards mobile devices as their primary computing device where displays are much smaller, internet connection is spotty and there are restrictions on power consumption. 
