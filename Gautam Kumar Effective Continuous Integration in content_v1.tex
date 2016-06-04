@@ -19,14 +19,14 @@
 %------------------------------------------------------------------------- 
 \begin{document}
 
-\title{Continuous Integration of Software Management}
+\title{Continuous Integration in Software Management}
 
 
 %for single author (just remove % characters)
 \author{
 {\rm Gautam Kumar, Prof. David Socha}\\
 Computing and Software Systems\\
-University of Washington Bothell\\
+University of Washington, Bothell\\
 \{gautamk,socha\}@uw.edu
 } % end author
 
@@ -137,10 +137,18 @@ Software management practices abstract away the inner workings processes in the 
 
 Another example of abstraction in Software management in teams would be embracing diversity which is an abstraction over Psychology and Economics to help teams take varied view points on any particular problem. 
 
+\subsection*{Cynefin perspective}
+
+When considered from the perspective of the Cynefin model \cite{snowden_cynefin_????}, Software management can be considered a task that ranges from "Complex" to "Chaotic" depending on the culture and discipline of an organisation. For example software management at a medium size organisation with a few stable products and some customers might be complex task while the same task at a start-up with an unreleased product and no customers might be "Chaotic" in nature.
+
+\begin{figure}[hbtp]
+\includegraphics[scale=0.6]{cynefin.png}
+\caption{The Cynefin model}
+\end{figure}
+
 \subsection*{CI in Software Management}
 
 Software management is in essence a process which tries to abstract away the chaos of managing an inherently complex task with the help of developers in an ever-evolving environment. As with any non trivial abstraction, software management is leaky and implementing continuous integration into Software management practices could potentially offer benefits similar to software development.
-
 
 
 \section*{Scope of Software Management}
@@ -180,22 +188,29 @@ Some potential areas which might come under the purview of software management a
 
 \section*{Continuous integration in people management}
 
+In the paper we limit the scope of implementing Continuous Integration in the software management process within people management and its potential benefits.
 
-Continuous integration has been well defined from the software development perspective, definitions from the side of Software Management on the other hand are quite sparse. 
+Continuous integration has been well defined from the software development perspective, definitions from the perspective of Software Management on the other hand are quite sparse. 
 
-The value of Continuous integration can only be seen in an organisation that values continuous improvement of the organisation as a whole as opposed to merely using CI as a tool for software development.
+Continuous integration is best implemented in an organisation where a significant emphasis is placed on continuous improvement and failure is considered a part of the learning process \cite{edmondson_strategies_2011}.
 
-The easiest area to define Continuous Integration within the scope of Software management would be Process Management. CI in terms of Process Management could be thought of as a way to verify that all internal processes within an organisation comply with the expectation and solve the intended problem. Some potential implications of a meta-process of Continuous Integration could be weeding out of complicated processes which affect productivity, Simplifying processes to reduce bottlenecks and potentially automation to simplify implementation and verification. There are many tools especially in the BPMN space which offer a simple way to automate and integration internal processes with existing infrastructure. 
+The easiest area to define Continuous Integration within the scope of Software management would be people management. Continuous Integration in terms of People management could be thought of as a way to verify that the everyone in the organisation is working towards a common goal.
 
-\section*{Implementing CI in Software Management}
 
-Continuous Integration and Improvement by nature is an iterative process thus implementing within the context of Software management requires the management team to follow a disciplined process of continuous evaluation and an evolution.
+\subsection*{Relation to software management}
+
+An organisation's products and the value derived from them are built by people in the organisation. In a software organisation the primary product is software so managing the people who build software would come under the purview of software management. 
+
+\subsection*{Implementing continuous integration}
+
+Continuous Integration and improvement are by their nature an iterative process thus implementing them within the context of software management requires the management team to follow a disciplined process of continuous evaluation and an evolution.
 
 \subsection*{Adoption}
-The initial adoption process of any new Software management model would be significantly different from integrating new team members into an existing model. For example, some the factors which affect the success of adopting Agile methodologies in an organisation are 
+
+The initial adoption process of any new software management model would be significantly different from integrating new team members into an existing model. For example, some the factors which affect the success of adopting Agile methodologies in an organisation are 
 Customer collaboration, satisfaction and commitment, Communication and negotiation skills of the team and Cultural factors \cite{misra_identifying_2009}.
 
-These success factors differ when brining in new team members. For example a team member fresh out of college might adapt to an existing process at an organisation with ease while a seasoned developer who is loyal to the waterfall model might have a hard time adapting to the rapid pace of an agile organisation. 
+These success factors differ when bringing in new team members. For example a team member fresh out of college might adapt to an existing process at an organisation with ease while a seasoned developer who is loyal to the waterfall model might have a hard time adapting to the rapid pace of an agile organisation. 
 
 As teams being to understand the expectations of their customers and their organisations the previously defined software process evolves thus as time goes on each team / organisation starts building a unique variation of the agile process.
 
@@ -209,7 +224,14 @@ It is the responsibility of the software management team to enable new developer
 \caption{The Software management team has to evolve the adoption process as the dev team deviates from the initial Software developement model}
 \end{figure}
 
+
+
+
+
 \subsection*{Success criteria} The software management team needs to have a clear and evolving success criteria which monitors the each new hire and how well they are able to adapt to their new teams. This differs from Definition of Done (DoD) based on the fact that DoD is merely a set of activities which need to be performed to get the user story to a shippable state while Success criteria is a broader set of expectations from the candidate which are recorded based on subjective observations. 
+
+\subsubsection*{Knowledge sharing}
+\cite{cabrera_fostering_2005}
 
 
 
