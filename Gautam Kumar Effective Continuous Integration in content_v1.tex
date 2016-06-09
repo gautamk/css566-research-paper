@@ -35,7 +35,7 @@ University of Washington, Bothell\\
 
 
 \section*{Abstract}
-Continuous Integration, a practice where developers integrate 
+Continuous Integration (CI), a practice where developers integrate 
 frequently \cite{stahl_modeling_2014} is considered an integral part of Agile 
 development. CI is often thought to be a safety net that prevents developers from deploying broken code to production. 
 
@@ -53,7 +53,7 @@ Martin Fowler in his seminal article \cite{fowler_continuous_2006} on Continuous
 
 In the context described above integration is the process of combining the work of all the developers of a project into a cohesive software. On the other hand if considered generically, Integration can be thought of as a practice of combining the work of multiple people and verifying its correctness. Using a similar collective, Continuous integration could be the process of merging the work of multiple people after specific events or set periods of time.
 
-TODO Expand
+In this paper we explore the history, benefits and the value of continuous integration from a software development perspective. We then try to apply the same concepts towards continuous integration in software management as a whole with a sample case study in people management. 
 
 
 \section*{Continuous improvement}
@@ -85,9 +85,17 @@ Continuous integration thus evolved as a mechanism to manage the risk associated
 
 Though continuous integration doesn't actually fix bugs, it offers a lot of benefits which help in improving the overall quality of the project such as Improved communication, Project predictability and increased developer productivity \cite{sta_ahl_experienced_2013}. So Continuous integration in many ways can be considered a modern method of complexity control \cite{beck_extreme_2000}.
 
-\subsection*{A typical continuous integration setup}
+\subsection*{Process}
 
 Continuous integration is typically setup as an automated process which fetches new changes from a source repository after a developer checks-in changes and builds,tests and sometimes even deploy code. Fig \ref{ci_process} describes such an implementation.
+
+\subsection*{Benefits}
+
+\paragraph*{Risk reduction}The greatest and most wide reaching benefit of CI according to Martin Fowler \cite{fowler_continuous_2006} is risk reduction. In an organisation without CI, after a long development cycle, neither the managers nor the developers are sure the time it would take complete integrating the various components. CI completely eliminates this risk.
+
+\paragraph*{Bug discovery} CI doesn't necessarily fix bugs, it merely makes bug discovery dramatically easier when paired with self-testing code (code with a large percentage of test coverage) because this makes it possible for the CI system to automatically test for bugs on every build. Since there are many builds throughout the day bugs are discovered easily and earlier in the development life-cycle.
+
+\paragraph*{Frequent deployment} A long integration cycle is one of the biggest barriers to frequent deployment \cite{fowler_continuous_2006} and since continuous integration eliminates this problem frequent deployment becomes a viable endeavour. Frequent deployment is important because, apart from the fact that users can get new features and bug fixes much more rapidly, frequent deployment allows users to give rapid feedback thus reducing the risk of delivering an unusable and disliked product further.
 
 
 \begin{figure*}[Ht!]
