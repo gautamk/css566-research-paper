@@ -15,7 +15,7 @@
 %------------------------------------------------------------------------- 
 % take the % away on next line to produce the final camera-ready version 
 \pagestyle{empty}
-
+\pagenumbering{arabic}
 %------------------------------------------------------------------------- 
 \begin{document}
 
@@ -123,11 +123,16 @@ Another example of abstraction in Software management in teams would be embracin
 
 \subsection*{Cynefin perspective}
 
-When considered from the perspective of the Cynefin model \cite{snowden_cynefin_????}, Software management can be considered a task that ranges from "Complex" to "Chaotic" depending on the culture and discipline of an organisation. For example software management at a medium size organisation with a few stable products and some customers might be complex task while the same task at a start-up with an unreleased product and no customers might be "Chaotic" in nature.
+The Cynefin model describes the relationship between the ability to determine causality in a situation and the way people respond to said situation. The model describes four states. The obvious state where cause and effect are easy to determine so people can sense, categorise and respond. The complicated state where the cause is not immediately apparent but can easily be determined by sensing, analysing and responding. The complex state where it neither the cause nor the effect is immediately apparent but we can run experiments to verify our direction so we probe sense and respond. The chaotic state where the system is not stable and we cannot wait to determine the state of the system so we act, sense and respond. Finally we have a state where it is not possible to determine the domain of the system
+Fig \ref{cynefin} describes the various states of the cynefin model in a easy to visualize manner.
+
+When considered from the perspective of the Cynefin model \cite{snowden_cynefin_????}, the relationship between software management processes and the people in the organisation can range from complex to outright chaotic. For example in an organisation where many people have experience working in an agile environment working within the bound of the organisation's implementation of agile can be a complex task for an individual. On the other hand when an organisation moves from waterfall towards agile, people in the organisation have a chaotic relationship with the new software management process and struggle to adapt to the new way of thinking. Agile software development thrives just at the edge of chaos and its easy to slip into a chaotic state when trying to transition from other software management methodologies \cite{kautz_just_2008}. 
+
 
 \begin{figure}[hbtp]
-\includegraphics[scale=0.6]{cynefin.png}
-\caption{The Cynefin model}
+\includegraphics[scale=0.55]{cynefin.png}
+\caption{The Cynefin model, The states on the left are un-ordered sates where causality cannot be determined and the states on the right are ordered where the system is highly constrained so causality is either obvious or easy to determine. The central dark area refers to un-determinable state when the state of the system cannot be determined by any reasonable means  \cite{snowden_leaders_2007}}
+\label{cynefin}
 \end{figure}
 
 \subsection*{CI in Software Management}
