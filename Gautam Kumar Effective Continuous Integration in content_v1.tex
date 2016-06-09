@@ -35,11 +35,11 @@ University of Washington, Bothell\\
 
 
 \section*{Abstract}
-Continuous Integration, A practice where developers integrate 
+Continuous Integration, a practice where developers integrate 
 frequently \cite{stahl_modeling_2014} is considered an integral part of Agile 
 development. CI is often thought to be a safety net that prevents developers from deploying broken code to production. 
 
-A similar process and ideology of continual improvement and integration can be applied to Software Management, The art and science of planning and leading software projects \cite{stellman_applied_2005}.
+A similar process and ideology of continual improvement and integration can be applied to Software Management, the art and science of planning and leading software projects \cite{stellman_applied_2005}.
 
 This paper attempts to explore the process of creating such an integration practice within an Organisation.
 
@@ -49,47 +49,12 @@ Software Management, Agile development, Continuous Integration
 
 \section*{Introduction}
 
-Martin Fowler in his seminal article \cite{fowler_continuous_2006} on Continuous Integration describes it as a practice where members of a team integrate their work frequently and each integration is verified by an automated build to detect problems quickly.
+Martin Fowler in his seminal article \cite{fowler_continuous_2006} on Continuous Integration (CI) describes it as a practice where members of a team integrate their work frequently and each integration is verified by an automated build to detect problems quickly.
 
 In the context described above integration is the process of combining the work of all the developers of a project into a cohesive software. On the other hand if considered generically, Integration can be thought of as a practice of combining the work of multiple people and verifying its correctness. Using a similar collective, Continuous integration could be the process of merging the work of multiple people after specific events or set periods of time.
 
-\section*{Evolving Environment}
+TODO Expand
 
-The outcome of a well managed software organisation are products which provide value to the customer and satisfy their need. In today's fast changing technology landscape the needs and expectations of the customers is always evolving. Such an evolution is affected by various factors, some of which are discussed in the following sections.
-
-\subsection*{Changing customer expectations}
-
-The first few generations of software customers were primarily educational institutions and enterprises where software was merely a means to an end. Customers today, especially in the consumer software market expect an experience rather than just a tool that solves a problem. This explains the reason why organisations today have roles for professionals who work towards streamlining the way people use software \cite{kolko_design_2015} \cite{dixon_stop_2010}.
-
-Customers have also tuned to the idea that organisations which build software systems  are expected to support their products for a long period of time when compared to hardware manufacturers who can get away with launching a new version of their product every year and deprecating old products every 2 years. This could potentially explain the meteoric rise in value of customer support services the market for which is projected to be valued at \$81 billion \cite{wuyts_outsourcing_2015}.
-
-These changes in the customer expectation landscape requires new strategies to be incorporated and verified within the software management process.
-
-\subsection*{New technologies}
-
-Virtual reality, Internet of Things and Machine learning are the hottest consumer technologies evolving as of this writing and all these new technologies promise a new dimension of interactivity and user experience \cite{bachvarov_design-by--customer_2009}. The promise of a new user experience and interactivity comes with added complexity and risk, for example Virtual reality requires new hardware and software capabilities which increases the potential chances of failure and development teams need to evolve new techniques of managing this risk.
-
-\subsection*{Product life cycles and Business models}
-
-Web 2.0 has made a significant impact on the way users and companies buy and sell software. The traditional model of expensive one-time licensing fee has evolved into a small monthly subscription fee and companies are expected to deliver constant updates to their software product. 
-
-A move to the subscription model from the licensing model might require implementing a continuous delivery strategy which might involve simplifying and streamlining the CI system to perform a large number smaller builds rather than single large builds \cite{schief_transforming_2012} \cite{di_valentin_measuring_2012}.
-
-
-\subsection*{Open source}
-
-Open source software has had a significant impact on the way companies develop software. Open source software helps developers build software faster and enables tapping into the collective wisdom of a larger community of developers. This translates into large savings for companies which is why many organisations are embracing the trend of using open source components within their technology stack \cite{baldwin_4_2014} \cite{lemmens_open_2008}.
-
-Introducing and integrating open source software isn't free, though there is no upfront licensing cost for using open source software. Using open source software requires dedicated effort to adapt to the structure of the software library in question. Security is another concern when using open source software so keeping the system up to date with patches becomes a mandate to preserve the privacy of users and also to fulfil certain legal requirements.
-
-\subsection*{New generation of developers}
-
-A whole new generation of developers have grown up embracing collaborative development techniques such as Q\&A sites, open source software and Hackathons and access or lack thereof to such a community within an organisation may have a significant impact on the productivity of developers \cite{vasilescu_continuous_2014}. 
-
-
-\subsection*{Effect on Businesses and Software management}
-
-The aforementioned factors can have a significant impact on the projects, people and incidentally the core business of a company. So to achieve business agility and quickly adapt to an ever changing landscape, companies which rely on software technologies need to be able to quickly adapt their software management process \cite{mathiassen_business_2006}.
 
 \section*{Continuous Improvement}
 
@@ -98,17 +63,36 @@ The American Society of Quality define Continuous Improvement to be
 
 Continuous Improvement as a concept has existed for a long time. We can find mentions to continuous Improvement in texts dating back to the mid-19th century \cite{schroeder_americas_????}. 
 
-During the Industrial revolution of the mid-19th century workers were often trained not to think but rather just perform just their task. Thus the task of thinking was effectively cut off from the task of doing, which lead to the thinkers not understanding the practical restrictions of the real world and the increasing complexity of the systems \cite{schroeder_americas_????}. The same concept applies even today with software systems. In large organisations developers are often disenfranchised from the decision making process.
+During the Industrial revolution of the mid-19th century workers were often trained not to think but rather just perform just their task. Thus the task of thinking was effectively cut off from the task of doing, which lead to the thinkers not understanding the practical restrictions of the real world and the increasing complexity of the systems \cite{schroeder_americas_????}. The same concept applies even today with software systems, computers have taken on the role of workers while humans have moved on to the task of thinking.
 
 This separation of thinkers from the practical implications of real world lead to the development of Continuous improvement which emphasizes a continuous stream incremental innovation \cite{bessant_rediscovering_1994}.
 
+Continuous improvement is one of the primary pre-requisites for continuous integration. A stable, unmaintained project does not change and thus has no need for a continual process of integration. We assume here that any changes introduced into a project is designed to improve the project in some way. There are situations where changes don't necessarily improve the project such as when malicious code in secretly introduced. 
+
+
 \section*{Continuous Integration}
 
-Continuous improvement incentivizes a structure where hundreds of people are collectively working on the same basic problem set \cite{bessant_rediscovering_1994}. Continuous improvement brings along with it an explosion of ideas and as some of those ideas implemented a surge in the complexity of the system. Such a surge in complexity eventually leads to either the quality or velocity of development to decline \cite{zaytsev_increasing_2013} . 
+\subsection*{History}
+
+The term continuous integration was first used by Grady Booch in his 1994 book \cite{booch_object-oriented_1994}. Booch refers to continuous integration as a micro process which produces many internal releases. He also mentions that testing should also be conducted as a continuous activity during the development process.
+
+Kent Beck and Ron Jeffries, the inventors of Extreme Programming(XP), wrote about implementing continuous integration in their book on XP \cite{astesiano_fundamental_1998}. Beck and Jeffries had worked together on building a payroll application for the Chrysler corporation and pioneered the process of XP during their time working on the Chrysler Comprehensive Compensation System (C3). Beck and Jeffries implemented the CI process within the C3 development team as a method to escape integration hell while also promoting the concept that all developers must work on the most recent release of the system \cite{cunningham_cunningham_2011}.
+
+\subsection*{Complexity}
+Continuous improvement incentivizes a structure where anyone in the organisation who possess  a basic skill set can contribute to the implementation of solutions for a common problem set \cite{bessant_rediscovering_1994}. Such a process brings along with it an explosion of ideas and as some of those ideas implemented complexity increases drastically. Such an increase in complexity eventually leads to either the quality or velocity of development to decline \cite{zaytsev_increasing_2013}. 
 
 Continuous integration thus evolved as a mechanism to manage the risk associated with complex software systems \cite{zaytsev_increasing_2013} and  attempts to provide a safety net \cite{fowler_continuous_2006} to developers. 
 
 Though continuous integration doesn't actually fix bugs, it offers a lot of benefits which help in improving the overall quality of the project such as Improved communication, Project predictability and increased developer productivity \cite{sta_ahl_experienced_2013}. So Continuous integration in many ways can be considered a modern method of complexity control \cite{beck_extreme_2000}.
+
+\begin{figure*}[Ht!]
+  \centering
+  \includegraphics[height=3in]{ci_process}
+  \caption{A typical CI process, source: \cite{cois_continuous_2015}}
+  \label{leakyabstraction}
+\end{figure*}
+
+
 
 \section*{Software Management and Continuous Integration}
 
@@ -118,7 +102,7 @@ The inherent complexity in software management is best described by the law of l
 
 An abstraction in the context of computers and software refers to a mechanism that tries to hide the complexity of the underlying system while still offering a useful interface to interact effectively with the underlying system. Abstractions are meant to simplify the process of interacting with an inherently complex system by hiding away certain irrelevant details.
 
-Though abstractions vastly simplify interactions with a complex system, the abstractions are still limited by the capabilities of underlying system and  thus some serious failures always trickle up through abstractions and surprise the user in unexpected ways.
+Though abstractions vastly simplify interactions with a complex system, the abstractions are still limited by the capabilities of underlying system and  thus some serious failures always trickle up through abstractions and surprise the user in unexpected ways. Fig \ref{leakyabstraction} describes such a trickle from hardware all the way to the application level.
 
 \begin{figure*}
   \centering
@@ -205,7 +189,11 @@ An organisation's products and the value derived from them are built by people i
 
 Continuous Integration and improvement are by their nature an iterative process thus implementing them within the context of software management requires the management team to follow a disciplined process of continuous evaluation and an evolution.
 
-\subsection*{Adoption}
+\subsection*{On boarding new hires}
+
+As an example we consider on boarding new hires to highlight ways to introduce continuous integration into an organisation.
+
+\subsubsection*{Adoption}
 
 The initial adoption process of any new software management model would be significantly different from integrating new team members into an existing model. For example, some the factors which affect the success of adopting Agile methodologies in an organisation are 
 Customer collaboration, satisfaction and commitment, Communication and negotiation skills of the team and Cultural factors \cite{misra_identifying_2009}.
@@ -226,17 +214,21 @@ It is the responsibility of the software management team to enable new developer
 
 
 
+\subsubsection*{Success criteria} The software management team needs to have a clear and evolving success criteria which monitors each new hire and how well they are able to adapt to their new teams. This differs from Definition of Done (DoD) based on the fact that DoD is merely a set of activities which need to be performed to get the user story to a shippable state while Success criteria is a broader set of expectations from the candidate which are recorded based on subjective observations. 
+
+Some of the metrics to measure under success criteria could be Team communication, Knowledge sharing \cite{cabrera_fostering_2005}, Productivity acceleration \cite{grote_making_2011} and Empathy \cite{seppala_hard_2014}.
+
+Success criteria in this case could potentially be defined as "After an initial introductory period, A new employee has learnt `X` new things from their team members and their productivity has increased by a factor of `Y`"
+
+\subsubsection*{Continuous Integration}
+As an example continuous integration from the perspective of on-boarding new hires can potentially be implemented as an internal process which evaluates the effectiveness of the on boarding process with both the team, the new member and the management to evaluate value of the on boarding process, effectiveness of its implementation and any potential flaws or breaks in its implementation. 
+
+Any implementation of the on boarding process could potentially break due to changes from either the dev team or the people management team. For example the dev team might introduce a new method of code review but this code review technique might be missing from the orientation packet for new hires. The continuous integration process for evaluating new hires could potentially catch this so that it can be corrected quickly.
 
 
-\subsection*{Success criteria} The software management team needs to have a clear and evolving success criteria which monitors the each new hire and how well they are able to adapt to their new teams. This differs from Definition of Done (DoD) based on the fact that DoD is merely a set of activities which need to be performed to get the user story to a shippable state while Success criteria is a broader set of expectations from the candidate which are recorded based on subjective observations. 
+\section*{Summary}
 
-\subsubsection*{Knowledge sharing}
-\cite{cabrera_fostering_2005}
-
-
-
-
-
+In this paper we describe the how software management is a complex task using the Cynefin model and the law of leaky abstraction. We also describe why continuous integration can help discover flaws in the process early with a case study about on-boarding new hires.
 
 \bibliographystyle{plain}
 \bibliography{css566_software_management}
